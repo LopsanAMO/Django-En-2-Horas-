@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>estto es el index</h1>
+    <form method="post">
+      {% csrf_token %}
+      {{form.as_p}}
+      {{extra.as_p}}
+      <input type="submit" value="ok">
+    </form>
+  </body>
+</html>
